@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojutsu Awakening: Modular Edition</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="vignette"></div>
+    <canvas id="chakra-canvas"></canvas>
+
+    <div class="eye-container" id="scene">
+        <div class="eye-socket" id="left-eye">
+            <div class="sclera">
+                <div class="veins" id="left-veins"></div>
+                <div class="iris-tracker">
+                    <div class="sharingan-iris">
+                        <div class="sharingan-pupil"></div>
+                        <div class="tomoe-wrapper"><div class="tomoe"></div></div>
+                        <div class="tomoe-wrapper"><div class="tomoe"></div></div>
+                        <div class="tomoe-wrapper"><div class="tomoe"></div></div>
+                    </div>
+                    <div class="reflection-main"></div>
+                    <div class="reflection-sub"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="eye-socket" id="right-eye" style="filter: drop-shadow(0 0 calc(20px * var(--emotion-glow)) rgba(150, 100, 255, 0.2));">
+            <div class="sclera">
+                <div class="veins" id="right-veins" style="background: radial-gradient(circle at center, transparent 40%, rgba(80,0,120,0.6) 80%, rgba(50,0,80,0.9) 100%);"></div>
+                <div class="iris-tracker">
+                    <div class="rinnegan-iris">
+                        <div class="ripple ripple-1"></div>
+                        <div class="ripple ripple-2"></div>
+                        <div class="ripple ripple-3"></div>
+                        <div class="ripple ripple-4"></div>
+                    </div>
+                    <div class="reflection-main"></div>
+                    <div class="reflection-sub"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="status-text">SYSTEM ALIGNED // PRESS SPACE TO EVOLVE</div>
+
+    <script type="module" src="js/App.js"></script>
+</body>
+</html>
